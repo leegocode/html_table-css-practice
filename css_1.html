@@ -8,28 +8,65 @@
   <style>
      p{
       color:red;
-
-
      }
+
      .info{
       color: rgb(121, 210, 202);
       background-color: rgb(2, 10, 1);
-
      }
+
+     h1.info{
+       border: 1 px;
+       color: rgb(203, 119, 20);
+       background-color: rgb(2, 40, 1);
+     }
+
+     .box{
+       background-color: rgba(6, 56, 152, 0.6)
+     }
+
+     #bold{
+       font-family: verdana;
+       font-size: 50px;
+       color:rgb(224, 39, 184)
+     }
+
+
+  img.pic[alt]{
+    border:4px solid red;
+  }
+
+  img.piccc[alt="alex"]{
+       border:4px solid green;
+     }
+
+
+
   </style>
 
 </head>
 <body>
 
-<h1>US: Coronavirus infections rising in 40 of 50 states</h1>
+<h1 id="bold" style="color:red; font-family: verdana; "> inline style >id > class >tag </h1>
+<h1 class="info"> H1_CLASS="INFO" </h1>
+
 <p class="info">
-    The number of confirmed coronavirus cases in the United States climbed to an all-time high of more than 50,000 per day on Thursday, with the infection curve rising in 40 out of 50 states in a reversal that has largely spared only the Northeast.
+  p class="info"
 </p>
-<p>In yet another alarming indicator, 36 states are seeing a rise in the percentage of tests that are coming back positive for the virus.
 
-The surge has been blamed in part on Americans not wearing face masks or following other social-distancing rules as states lifted their lockdowns over the past few weeks.
+<p id="bold" style ="color:rgba(0, 255, 156, 0.64) !important">
+  /id 被 !important 反轉
 
+  </p>
+
+
+<p class="info box">
+  class="info box"
 </p>
+
+<img src="https://fakeimg.pl/250x100/" class="pic">
+<img src="https://fakeimg.pl/250x100/" class="pic" alt="caption">
+<img src="https://fakeimg.pl/250x100/" class="piccc" alt="alex">
 
 
 </body>
