@@ -10,19 +10,53 @@
 
   *{
     margin: 0;
-    paading: 0;
+    padding: 0;
     list-style: none;
-  }
+    }
+
+.box{
+  width: 1000px;
+  height: 800px;
+  margin: auto;
+  background-color: rgb(212, 235, 76);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.item{
+  width: 200px;
+  height: 200px;
+  font-size: 50px;
+}
+
+.item:nth-child(1){
+  background-color: rgb(240, 139, 193);
+}
+
+
+.item:nth-child(2){
+  background-color: rgb(240, 188, 140);
+}
+
+.item:nth-child(3){
+  background-color:rgb(119, 222, 255);
+}
+
+
+
 
   </style>
 
 </head>
-<body>
-  <div>
-    啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
-    啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
-    啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
 
+<body>
+
+
+  <div class="box">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
   </div>
 
 </body>
