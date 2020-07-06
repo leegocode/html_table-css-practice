@@ -15,33 +15,35 @@
     }
 
 .box{
-  width: 1000px;
+  width: 720px;
+
   height: 800px;
   margin: auto;
   background-color: rgb(212, 235, 76);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
+
 }
 
 .item{
+  margin: 20px;
   width: 200px;
   height: 200px;
   font-size: 50px;
 }
 
-.item:nth-child(1){
+.item:nth-child(even){
   background-color: rgb(240, 139, 193);
 }
 
 
-.item:nth-child(2){
+.item:nth-child(odd){
   background-color: rgb(240, 188, 140);
 }
 
-.item:nth-child(3){
-  background-color:rgb(119, 222, 255);
-}
+
 
 
 
@@ -54,6 +56,9 @@
 
 
   <div class="box">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
     <div class="item">1</div>
     <div class="item">2</div>
     <div class="item">3</div>
