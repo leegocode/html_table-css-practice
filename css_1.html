@@ -6,51 +6,99 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
-     p{
+  *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  h1, p{
+      width: 800px;
       color:red;
+      text-align: center;
      }
 
      .info{
-      color: rgb(121, 210, 202);
-      background-color: rgb(2, 10, 1);
+       margin: auto;
+       font-family: Verdana, Geneva, sans-serif;
+       font-size: 18px;
+       letter-spacing: 2px;
+       word-spacing: 10px;
+       color: #000000;
+       font-weight: 400;
+       text-decoration: underline solid rgb(68, 68, 68);
+       font-style: italic;
+       width: 800px;
      }
 
      h1.info{
+       margin: auto;
        border: 1 px;
-       color: rgb(203, 119, 20);
+       font-size: 50px;
+       color: rgb(245, 239, 106);
        background-color: rgb(2, 40, 1);
      }
 
+
+
      .box{
-       background-color: rgba(6, 56, 152, 0.6)
+       margin: auto;
+       background-color: rgb(170, 218, 10);
+       letter-spacing: 10px;
+       width: 800px;
      }
 
      #bold{
+       margin: auto;
        font-family: verdana;
        font-size: 50px;
        color:rgb(224, 39, 184)
      }
 
+     .threepic{
+       margin: auto;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       width: 800px;
+       height: 500px;
+       box-sizing:  border-box;
 
-  img.pic[alt]{
-    border:4px solid red;
-  }
+       border-left: 3px solid rgb(93, 204, 255);
+       border-right: 3px solid rgb(93, 204, 255);
+       border-bottom: 3px solid rgb(93, 204, 255);
+       align-items: center;
+       align-content: space-around;
 
-  img.piccc[alt]{
-       border:4px solid green;
+       /* background-color: rgba(64, 143, 226, 0.3); */
+
+
+
      }
 
-div{
+  .photo{
+    text-align: center;
+    margin: 2px;
+    background-color: rgb(24, 201, 249)
+  }
+
+  img[alt]{
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+
+ /* .div{
   padding: 30px;
   border: 10px solid gray;
   background-color: rgb(252, 252, 252);
 }
 
-  .box1 > div{
+  .box1 > .div{
    background-color: #ccc;
    border-color: rgb(246, 158, 36);
    cursor: pointer;
- }
+ } */
 
 
   </style>
@@ -58,35 +106,61 @@ div{
 </head>
 <body>
 
-<h1 id="bold" style="color:red; font-family: verdana; "> inline style >id > class >tag </h1>
-<h1 class="info"> H1_CLASS="INFO" </h1>
+<h1 id="bold" style="color:red; font-family: Gill Sans Extrabold, sans-serif;"> h1 inline style > id > class >tag </h1>
+<h1 class="info"> h1_class="info" h1.info </h1>
 
 <p class="info">
-  p class="info"
+  p_class="info" 只用了info class選取器
 </p>
 
 <p id="bold" style ="color:rgba(0, 255, 156, 0.64) !important">
-  /id 被 !important 反轉
+  id 會 被 !important 反轉
 
   </p>
 
 
 <p class="info box">
-  class="info box"
+  class="info box" 選取器使用了.box
 </p>
 
-<img src="https://fakeimg.pl/250x100/" class="pic">
-<img src="https://fakeimg.pl/250x100/" class="pic" alt="caption">
-<img src="https://fakeimg.pl/250x100/" class="piccc" alt="alex">
+<div class="threepic">
+  <div class="photo">
+    <img src="https://fakeimg.pl/250x100/" alt="" ><figcaption>只使用了class="photo"</figcaption>
+ </div>
+ <div class="photo"><img src="https://fakeimg.pl/250x100/" alt="caption"><figcaption>使用了alt=
+ caption</figcaption></div>
+ <div class="photo"><img src="https://fakeimg.pl/250x100/" alt="alex"><figcaption>使用了alt=
+ alex</figcaption></div>
+ <div class="photo">
+   <img src="https://fakeimg.pl/250x100/" alt="" ><figcaption>只使用了class="photo"</figcaption>
+</div>
+<div class="photo"><img src="https://fakeimg.pl/250x100/" alt="caption"><figcaption>使用了alt=
+caption</figcaption></div>
+<div class="photo"><img src="https://fakeimg.pl/250x100/" alt="alex"><figcaption>使用了alt=
+alex</figcaption></div>
+<div class="photo">
+  <img src="https://fakeimg.pl/250x100/" alt="" ><figcaption>只使用了class="photo"</figcaption>
+</div>
+<div class="photo"><img src="https://fakeimg.pl/250x100/" alt="caption"><figcaption>使用了alt=
+caption</figcaption></div>
+<div class="photo"><img src="https://fakeimg.pl/250x100/" alt="alex"><figcaption>使用了alt=
+alex</figcaption></div>
 
-<div class="box1"><p>box3  ////.box1 > div{
+
+</div>
+
+
+
+
+
+<!-- <div class="box1"><p>box3  ////.box1 > div{
  background-color: #ccc;
  border-color: rgb(246, 158, 36);
- cursor: pointer; ////  </p>
+ cursor: pointer; ////  </p> -->
 
-<div class="box2" ><p>box2</p>
+<!-- <div class="box2" ><p>box2</p>
 
-<div class="box3"><p>box3</p>
+<div class="box3"><p>box3</p> -->
 
 </div>
 </div>
