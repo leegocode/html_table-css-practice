@@ -10,6 +10,13 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+  }
+  body{
+    background: url(live/josef.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position:center center;
   }
 
   h1, p{
@@ -43,7 +50,7 @@
 
      .box{
        margin: auto;
-       background-color: rgb(170, 218, 10);
+       background-color: rgb(170, 218, 10, 0.7);
        letter-spacing: 10px;
        width: 800px;
      }
@@ -71,16 +78,34 @@
        align-items: center;
        align-content: space-around;
 
-       /* background-color: rgba(64, 143, 226, 0.3); */
+       background-color: rgba(255, 255, 255, 1);
 
 
 
      }
 
+     .hovertest{
+       transition: 0.3s;
+     }
+
+
+     .hovertest:hover{
+
+       background-color: #106532;
+
+
+     }
   .photo{
     text-align: center;
     margin: 2px;
-    background-color: rgb(24, 201, 249)
+    background-color: rgb(24, 201, 249, 0.3);
+    font-family: sans-serif;
+    transition: 0.2s;
+  }
+
+  .photo:hover{
+    background-color: rgb(250, 185, 190);
+    border-radius:10%;
   }
 
   img[alt]{
@@ -113,7 +138,7 @@
   p_class="info" 只用了info class選取器
 </p>
 
-<p id="bold" style ="color:rgba(0, 255, 156, 0.64) !important">
+<p class="hovertest" id="bold" style ="color:rgb(167, 221, 255) !important">
   id 會 被 !important 反轉
 
   </p>
@@ -125,26 +150,21 @@
 
 <div class="threepic">
   <div class="photo">
-    <img src="https://fakeimg.pl/250x100/" alt="" ><figcaption>只使用了class="photo"</figcaption>
+    <img src="https://fakeimg.pl/250x100/" alt="" ><figcaption>alt=""</figcaption>
  </div>
- <div class="photo"><img src="https://fakeimg.pl/250x100/" alt="caption"><figcaption>使用了alt=
- caption</figcaption></div>
- <div class="photo"><img src="https://fakeimg.pl/250x100/" alt="alex"><figcaption>使用了alt=
- alex</figcaption></div>
+ <div class="photo"><img src="https://fakeimg.pl/250x100/" alt="caption"><figcaption>alt="caption"</figcaption></div>
+ <div class="photo"><img src="https://fakeimg.pl/250x100/" alt="alex"><figcaption>alt="alex"</figcaption></div>
  <div class="photo">
-   <img src="https://fakeimg.pl/250x100/" alt="" ><figcaption>只使用了class="photo"</figcaption>
+   <img src="https://fakeimg.pl/250x100/" alt="" ><figcaption>alt=""</figcaption>
 </div>
-<div class="photo"><img src="https://fakeimg.pl/250x100/" alt="caption"><figcaption>使用了alt=
-caption</figcaption></div>
+<div class="photo"><img src="https://fakeimg.pl/250x100/" alt="caption"><figcaption>alt="caption"</figcaption></div>
 <div class="photo"><img src="https://fakeimg.pl/250x100/" alt="alex"><figcaption>使用了alt=
 alex</figcaption></div>
 <div class="photo">
-  <img src="https://fakeimg.pl/250x100/" alt="" ><figcaption>只使用了class="photo"</figcaption>
+  <img src="https://fakeimg.pl/250x100/" alt="" ><figcaption>alt=""</figcaption>
 </div>
-<div class="photo"><img src="https://fakeimg.pl/250x100/" alt="caption"><figcaption>使用了alt=
-caption</figcaption></div>
-<div class="photo"><img src="https://fakeimg.pl/250x100/" alt="alex"><figcaption>使用了alt=
-alex</figcaption></div>
+<div class="photo"><img src="https://fakeimg.pl/250x100/" alt="caption"><figcaption>alt="caption"</figcaption></div>
+<div class="photo"><img src="https://fakeimg.pl/250x100/" alt="alex"><figcaption>alt="alex"</figcaption></div>
 
 
 </div>
